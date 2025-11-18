@@ -1,0 +1,47 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh; /* 画面の高さいっぱいに広げる */
+  transition: background-color 0.5s ease; /* 色の変化をアニメーションさせる */
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  display: flex; /* Flexboxを有効化 */
+  flex-direction: column; /* 縦並びにする */
+  justify-content: center; /* 縦方向の中央揃え */
+  align-items: center; /* 横方向の中央揃え */
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:active {
+  transform: scale(0.95); /* クリック時に少し凹む演出 */
+}
